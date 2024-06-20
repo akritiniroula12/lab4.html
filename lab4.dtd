@@ -1,0 +1,19 @@
+<!DOCTYPE students[
+<!ELEMENT students (student+)> 
+<!ELEMENT student (name, address+, phone)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ALLLIST address
+    type (permanent | temporary) #REQUIRED>
+<!ALLLIST phone
+    length CDATA #FIXED "10">
+]>
+
+<students>
+<student>
+<name>Akriti Niroula</name>
+<address>Belbari</address>
+<phone>9842130982</phone>
+<website>www.student276.com</website>
+</student>
